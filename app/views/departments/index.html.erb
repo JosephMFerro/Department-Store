@@ -1,0 +1,9 @@
+<h1>JOES DEPARTMENT STORE</h1>
+<hr />
+<%= link_to 'Create a Department', new_department_path %>
+
+<ul>
+  <%= @departments.each do |dep| %>
+    <li><%= link_to dep.name, department_path(dep) %>
+  <% end %>
+</ul>
